@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:rgb(255,255,255);
+            background:rgb(0,2,20,.95);
+        }
+        .container{
+            box-sizing: border-box;
+            display:inline-grid;
+            grid-template-columns:400px 350px 400px;
+            grid-template-rows: 420px;
+            padding:100px 0 0 100px;
+            gap: 0 10px
+        }
+        .container-imagen{
+            display:inline-block;
+            width: 350px;;
+            height: 420px;
+            background-image: url(estrellas.gif);
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+        .item{
+            font-family: 'Beau Rivage', cursive;
+            font-size: 25px;
+            box-shadow: 5px 5px 5px rgb(0, 0, 22,.95);
+            color: black;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column;
+        }
+        .titulo{
+            height: 30px;
+            margin: 30px 0 25px 0;
+        }
+        .contenido{
+            height: auto;
+            margin: 0 0 25px 0;
+            width:70%;
+            align-self: flex-start;
+        
+            border-radius: 10px;
+        }
+        .item{
+            background: white;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .imagenes{
+            display: inline-grid;
+            width: 370px;
+            height: auto;
+            grid-template-columns: 120px 120px 120px;
+            grid-template-rows:130px 130px 130px;
+            gap: 2px 2px;
+            background:whitesmoke;
+        }
+        .imagen img{
+            border-radius: 5px;
+        }
+        .imagen1{
+            grid-column-start:1;
+            grid-column-end: 3;
+        }
+        .imagen2{
+            grid-column-start:3;
+            grid-column-end: 4;
+            grid-row-start:1;
+            grid-row-end:3;   
+        }
+        .imagen1 img{
+            width:240px;
+            height:125px;
+        }
+        .imagen2 img{
+            width: 115px;
+            height: 255px;
+        }
+        .imagen3 img{
+            width: 115px;
+            height: 130px;
+        }
+        .imagen4 img{
+            width: 115px;
+            height: 130px;
+        }
+        .imagen5{
+            grid-column-start:1;
+            grid-column-end: 3;
+        }
+        .imagen5 img{
+            width:240px;
+            height:125px;
+        }
+        .imagen6 img{
+            width: 115px;
+            height: 130px;
+        }
+        .carta{
+            background-image: url(fondo.jpg);
+        }
+        .animacion{
+            transition:transform 1s;
+            transition-timing-function: linear;
+        }
+        .animacion:hover{
+        transform: scale(1.1);
+        }
+        .animacion2{
+            transition:transform 1s;
+            transition-timing-function: ease-in-out;
+        }
+        .animacion2:hover{
+        transform: scale(.9);
+        }
+        @media (max-width: 600px) {
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                display: inline-flex;
+                box-sizing:border-box;
+                flex-direction: column;
+                width:100vw;
+                height: auto;
+                margin: 0;
+                padding:20px 10px 0 10px;
+            }
+            .carta{
+                background-image: url(fondo.jpg) no-repeat fixed center;
+                -o-background-size: cover;
+                background-size: cover;
+                height: 100%;
+                width: 100% ;
+            }
+            .titulo{
+                align-self: flex-start;
+            }
+            .container-imagen{
+            display:inline-block;
+            width: 100%;
+            height: 420px;
+            background-image: url(estrellas.gif);
+            background-repeat: no-repeat;
+            border-radius: 15px;
+            margin:15px 0 0 0;
+            }
+            .imagenes{
+            box-sizing: border-box;
+            margin:15px 10px 180px 0;
+            display: inline-grid;
+            width:100%;
+            height:auto;
+            grid-template-columns:35% 35% 25%;
+            grid-template-rows:130px 130px 130px;
+            gap: 1px 1px;
+            background:black;
+            }
+            .imagen1 img{
+            width:235px;
+            height:125px;
+            }
+            .imagen2 img{
+            width: 100px;
+            height: 260px;
+        }
+        .imagen3 img{
+            width: 115px;
+            height: 130px;
+        }
+        .imagen4 img{
+            width: 115px;
+            height: 130px;
+        }
+        .imagen5{
+            grid-column-start:1;
+            grid-column-end: 3;
+        }
+        .imagen5 img{
+            width:235px;
+            height:130px;
+        }
+        .imagen6 img{
+            width: 100px;
+            height: 130px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item carta animacion">
+           <div class="titulo"><h2>Feliz Cumpleaños &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h2></div>
+           <div class="contenido">
+               <p>Hola flakita ¡Feliz dia amor! hoy 13 de abril del 2022 pero de hace 19 años nacio la mujer mas 
+                   hermosa, bonita, inteligente, sincera y generosa de todo el mundo, asi es hablo de ti la nanas 
+                   esa nana que me hace amarla cada dia mas.
+                </p>
+           </div>
+           <div class="contenido">
+            Felicidades
+           </div>   
+        </div>
+        <div class="container-imagen animacion">
+            <p class="nombre"></p>
+        </div>
+        <div class="imagenes">
+            <div class="imagen1 imagen animacion2">
+                <img src="Danna1.jpg" alt="">
+            </div>
+            <div class="imagen2 imagen animacion2">
+                <img src="Danna2.jpg" alt="">
+            </div>
+            <div class="imagen3 imagen animacion2">
+                <img src="Danna12.jpg" alt="">
+            </div>
+            <div class="imagen4 imagen animacion2">
+                <img src="Danna7.jpg" alt="">
+            </div>
+            <div class="imagen5 imagen animacion2">
+                <img src="Danna9.jpg" alt="">
+            </div>
+            <div class="imagen6 imagen animacion2">
+                <img src="Danna10.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script>
+
+</script>
+</html>
